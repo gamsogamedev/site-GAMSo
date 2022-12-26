@@ -258,7 +258,7 @@ a:active{
 .barranav{
     display: block;
     position: static;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 16px;
 
 }
@@ -304,12 +304,22 @@ a:active{
 .container__jogos{
     height: 60vh;
     justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 10px 8px;
+}
+
+.cartaojogo{
+    width: 30%;
 }
 
 /* 
     DISPLAY NOVIDADES ------------------------------------------------------
     DISPLAY GRUPOS ------------------------------------------------------
 */
+
+.container__lista{
+    padding: 10px 8px;
+}
 
 /* 
     DISPLAY DISCORD ------------------------------------------------------
