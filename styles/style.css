@@ -1,0 +1,95 @@
+/* settando variaveis */
+:root{
+    --gamso-red: #7e0012;
+    --gamso-gray: #333333;
+}
+
+body{
+    background-color: var(--gamso-gray);
+    color: white;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gamso-red);
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 10vh;
+    max-height: 60px;
+}
+
+/* escondendo elementos que nao aparecem no mobile ou nao precisam aparecer*/
+.cabecalho__menu, .cabecalho__titulo, .cabecalho__texto {
+    display: none;
+}
+
+/* linhas que formam o meno hamburguer*/
+.linha1, .linha2, .linha3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: .5s;
+}
+
+/* Rotate first bar */
+.cabecalho__menu:checked~.cabecalho__label>.linha1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+/* Fade out the second bar */
+.cabecalho__menu:checked~.cabecalho__label>.linha2 {opacity: 0;}
+
+/* Rotate last bar */
+.cabecalho__menu:checked~.cabecalho__label>.linha3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.cabecalho__tmobile{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.cabecalho__logo{
+    width: 40px;
+}
+
+.barranav{
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 76px;
+    left: 0;
+    width: 30vw;
+    min-width: fit-content;
+}
+
+.cabecalho__menu:checked~.barranav{
+    display: block;
+}
+
+.barranav__lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.barranav__lista > li{
+    padding: 1em;
+}
+
+.barranav__link{
+    margin-top: 1em;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barranav__link:active{
+    text-decoration: underline;
+}

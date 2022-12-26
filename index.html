@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="sortcut icon" href="#" type="image/x-icon"/>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="sortcut icon" href="img/Logo_Gamso_c_simbolos.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>GAMSo</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <input type="checkbox" id="hamb" class="cabecalho__menu" aria-label="Menu">
+        <label for="hamb" class="cabecalho__label">
+            <div class="linha1"></div><div class="linha2"></div><div class="linha3"></div>
+        </label>
+        <h2 class="cabecalho__tmobile">GAMSo</h2>
+        <img src="img/Logo_Gamso_c_simbolos.png" alt="logo do gamso" class="cabecalho__logo">
+        <h1 class="cabecalho__titulo">GAMSo - Game Art Music Software</h1>
+        <p class="cabecalho__texto">O grupo de desenvolvimento de jogos da UFSCar</p>
+        <nav class="barranav">
+            <ul class="barranav__lista">
+                <li><a class="barranav__link" href="index.html">home</a></li>
+                <li><a class="barranav__link" href="jogos.html">jogos</a></li>
+                <li><a class="barranav__link" href="membros.html">membros</a></li>
+                <li><a class="barranav__link" href="eventos.html">eventos</a></li>
+                <li><a class="barranav__link" href="sobre.html">sobre nós</a></li>
+                <li><a class="barranav__link" href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <!--conteudo pagina principal-->
+        <div class="container">
+            <h2 class="container__titulo">jogos</h2>
+            <div class="container__jogos">
+                <article class="cartaojogo">
+                    <img src="" alt="thumbnail jogo" class="cartaojogo__thumb">
+                    <h3 class="cartaojogo__titulo">nome jogo</h3>
+                    <p class="cartaojogo__desc">o jogo é sobre blablabla</p>
+                    <a href="#" class="cartaojogo__link">jogar</a>
+                </article>
+            </div>
+        </div> <!--flex carrocel com varios jogos do itch-->
+        <div class="container">
+            <h2 class="container__titulo">novidades</h2>
+        </div> <!--secao scrollavel com feed das redes-->
+        <div class="container">
+            <h2 class="container__titulo">outros grupos</h2>
+        </div> <!--secao shoutouts pro fog e maritacas-->
+        <div class="container">
+            <h2 class="container__titulo">nosso discord</h2>
+        </div> <!--widget q mostra o discord-->
+    </main>
+    <footer class="rodape">
+        <button class="btnganso">
+            <!--ganso q faz som kkkkk-->
+        </button>
+        <div class="redes">
+            <!--icones de redes sociais-->
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
