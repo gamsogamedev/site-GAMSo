@@ -145,6 +145,10 @@ a:active{
     flex-direction: column;
 }
 
+.cartaojogo__thumb{
+    width: 100%;
+}
+
 .cartaojogo__link{
     display: flex;
     justify-content: center;
@@ -185,6 +189,11 @@ a:active{
 
 .container__lista__item>a{
     grid-row: span 2;
+}
+
+.container__lista__item>a>img{
+    width: 40px;
+
 }
 
 /* 
@@ -306,10 +315,12 @@ a:active{
     justify-content: space-evenly;
     align-items: flex-start;
     padding: 10px 8px;
+    margin-bottom: 20px;
 }
 
 .cartaojogo{
     width: 30%;
+    max-height: 45%;
 }
 
 /* 
