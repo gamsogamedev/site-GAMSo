@@ -146,7 +146,9 @@ a:active{
 }
 
 .cartaojogo__thumb{
-    width: 100%;
+    display: block;
+    /* provisorio até dar um jeito das thumbs ficarem boas */
+    width: 10vw;
 }
 
 .cartaojogo__link{
