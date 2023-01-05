@@ -43,6 +43,15 @@ a:active{
     height: 10vh;
     max-height: 60px;
 }
+.cabecalho__titulo {
+    font-weight: bold;
+    font-size: 200%;
+}
+.cabecalho__texto {
+    font-weight: bold;
+    font-size: 110%;
+}
+    
 
 /* escondendo elementos que nao aparecem no mobile ou nao precisam aparecer*/
 .cabecalho__titulo, .cabecalho__texto {
@@ -91,7 +100,9 @@ a:active{
     left: 0;
     width: 30vw;
     min-width: fit-content;
+
 }
+
 
 .barranav.menuaberto{
     display: block;
@@ -104,11 +115,15 @@ a:active{
 
 .barranav__lista > li{
     padding: 1em;
+
+    /**/
 }
 
-.barranav__link{
+.barranav__link {
     margin-top: 1em;
     font-size: 24px;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -290,6 +305,10 @@ a:active{
     justify-content: flex-end;
 }
 
+.container__lista__item > p{
+    margin-bottom: 12%;
+}
+
 /* 
     PRINCIPAL ------------------------------------------------------
 */
@@ -334,6 +353,7 @@ a:active{
 .cartaojogo{
     width: 30%;
     max-height: 45%;
+    margin-top: 2%;
 }
 
 /* 
