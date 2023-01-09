@@ -12,12 +12,12 @@ body{
     font-size: 16px;
 
     
-    min-height:75vh;
+    min-height:85vh;
 
 
     /* gambiarra pra deixar o footer no pé */
     position: relative;
-    padding-bottom: 25vh;
+    padding-bottom: 15vh;
 }
 
 a{
@@ -251,10 +251,12 @@ a:active{
     /* gambiarra pra deixar footer no lugar, depois definir height pra ele */
     position: absolute;
     bottom: 0;
+    height: 15vh;
 }
 
 .btnganso>img{
-    width: 50px;
+    /* width: 50px; */
+    height: -webkit-fill-available;
     margin: 1em;
 }
 
