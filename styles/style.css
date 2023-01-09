@@ -207,12 +207,13 @@ a:active{
 .container__lista{
     display: flex;
     flex-direction: column;
+    margin-top: .5em;
 }
 
 .container__lista__item{
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: .5em 0;
+    margin: .5em;
 }
 
 .container__lista__item>a{
@@ -309,7 +310,7 @@ a:active{
     justify-content: flex-end;
 }
 
-.container__lista__item > p{
+.container__lista__item {
     margin-bottom: 12%;
 }
 
