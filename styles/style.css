@@ -186,6 +186,7 @@ a:active{
     font-size: 0.9rem;
 
     color: white;
+    transition: .3s;
 }
 
 .cartaojogo__link:hover{
