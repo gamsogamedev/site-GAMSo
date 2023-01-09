@@ -1,5 +1,31 @@
 // inicializador do swiper
 const swiper = new Swiper('.swiper', {
+
+    //pra experimentar depois: trocar o flex do container__jogos pra um slider que mostra a quantidade de jogos que couberem na tela
+/*
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+        slidesPerView: 4,
+        spaceBetween: 40
+        }
+    }
+*/
+
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -15,7 +41,7 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   
-  });
+});
 
 //ativador do menu lateral mobile
 function toggleMenu()
