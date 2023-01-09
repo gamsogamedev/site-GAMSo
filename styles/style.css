@@ -160,11 +160,14 @@ a:active{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 1em;
 }
 
 .cartaojogo{
     display: flex;
     flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
 }
 
 .cartaojogo__thumb{
@@ -209,6 +212,7 @@ a:active{
 .container__lista__item{
     display: grid;
     grid-template-columns: auto 1fr;
+    margin: .5em 0;
 }
 
 .container__lista__item>a{
@@ -320,7 +324,7 @@ a:active{
     'adisc agrups anews';
     grid-gap: 10px;
     
-    margin: 1em, .5em;
+    margin: 1em .5em;
 }
 
 /* settando areas do grid */
