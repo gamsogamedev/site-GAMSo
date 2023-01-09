@@ -188,6 +188,10 @@ a:active{
     color: white;
 }
 
+.cartaojogo__link:hover{
+    background-color: #004d88;
+}
+
 .cartaojogo__link::before{
     content: "🞂";
     font-size: 24px;
