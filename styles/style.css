@@ -329,9 +329,9 @@ a:active{
     'ajogos ajogos anews'
     'ajogos ajogos anews'
     'adisc agrups anews';
-    grid-gap: 10px;
+    grid-gap: 2em 1em;
     
-    margin: 1em .5em;
+    margin: 2em 1em;
 }
 
 /* settando areas do grid */
@@ -348,7 +348,7 @@ a:active{
     height: 100%;
     margin: 0;
 
-    min-width: 30vw;
+    min-width: 25vw;
 }
 
 /* 
