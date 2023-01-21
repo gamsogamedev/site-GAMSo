@@ -390,3 +390,19 @@ a:active{
 }
 
 }
+
+/*
+    FORMULÁRIOS -----------------------------------------------
+*/
+input[type=email]{
+    padding: 10px 0;
+}
+
+textarea{
+    padding: 10px 0;
+}
+
+.container__formulario{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
