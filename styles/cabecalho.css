@@ -1,0 +1,87 @@
+/* 
+    CABECALHO ------------------------------------------------------
+*/
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gamso-red);
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 10vh;
+    max-height: 60px;
+}
+.cabecalho__titulo {
+    font-weight: bold;
+    font-size: 200%;
+}
+.cabecalho__texto {
+    font-weight: bold;
+    font-size: 110%;
+}
+    
+
+/* escondendo elementos que nao aparecem no mobile ou nao precisam aparecer*/
+.cabecalho__titulo, .cabecalho__texto {
+    display: none;
+}
+
+/* linhas que formam o meno hamburguer*/
+.linha1, .linha2, .linha3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: .5s;
+}
+
+/* Rotate first bar */
+.linha1.menuaberto {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+/* Fade out the second bar */
+.linha2.menuaberto {opacity: 0;}
+
+/* Rotate last bar */
+.linha3.menuaberto {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.cabecalho__tmobile{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.cabecalho__logo{
+    width: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    /* 
+        CABECALHO ------------------------------------------------------
+    */
+    .cabecalho{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        height: 20vh;
+        max-height: 20vh;
+        column-gap: 20px;
+    }
+    
+    .cabecalho__logo{
+        grid-row: span 2;
+        width: 15vh;
+    }
+    
+    .cabecalho__menu, .cabecalho__tmobile{
+        display: none;
+    }
+    
+    .cabecalho__titulo, .cabecalho__texto {
+        display: block;
+    }
+
+}
