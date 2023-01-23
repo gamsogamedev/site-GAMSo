@@ -1,0 +1,17 @@
+/*
+    FORMULÁRIOS -----------------------------------------------
+*/
+
+input[type=text]{
+    padding: 10px 0;
+}
+
+textarea{
+    padding: 10px;
+}
+
+.container__formulario{
+    margin: 1em;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
