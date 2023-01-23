@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
     grid: {
         rows: 1,
     },
-    spaceBetween: 10,
+    spaceBetween: 5,
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
@@ -17,25 +17,25 @@ const swiper = new Swiper('.swiper', {
         grid: {
             rows:1,
         },
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerGroup: 2,
         },
         // when window width is >= 640px
-        640: {
+        /* 640: {
         slidesPerView: 2,
         grid: {
             rows: 2,
         },
         spaceBetween: 40,
         slidesPerGroup: 2,
-        },
+        }, */
         // tamanho desktop
         768: {
         slidesPerView: 3,
         grid: {
             rows: 2,
         },
-        spaceBetween: 40,
+        spaceBetween: 20,
         slidesPerGroup: 3,
         }
     },
