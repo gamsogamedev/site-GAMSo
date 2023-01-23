@@ -2,7 +2,7 @@
 const swiper = new Swiper('.swiper', {
 
     //pra experimentar depois: trocar o flex do container__jogos pra um slider que mostra a quantidade de jogos que couberem na tela
-/*
+//*
     // Default parameters
     slidesPerView: 1,
     spaceBetween: 10,
@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
         slidesPerView: 4,
         spaceBetween: 40
         }
-    }
-*/
+    },
+//*/
 
     // Optional parameters
     direction: 'horizontal',
