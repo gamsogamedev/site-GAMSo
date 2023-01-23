@@ -1,0 +1,179 @@
+/* 
+    PRINCIPAL ------------------------------------------------------
+*/
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+
+.container{
+    height: fit-content;
+    border-top: 1px solid white;
+    margin: 1em 0;
+}
+
+.container__titulo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -.5em;
+    margin-left: .5em;
+    background-color: var(--gamso-gray);
+    width: fit-content;
+    padding: 0 .5em;;
+}
+
+/* 
+    DISPLAY JOGOS ---------------------------------------------------
+*/
+.container__jogos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.cartaojogo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.cartaojogo__thumb{
+    display: block;
+    /* provisorio até dar um jeito das thumbs ficarem boas */
+    width: 10vw;
+}
+
+.cartaojogo__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+
+    color: white;
+    transition: .3s;
+}
+
+.cartaojogo__link:hover{
+    background-color: #004d88;
+}
+
+.cartaojogo__link::before{
+    content: "🞂";
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.cartaojogo__link:active{
+    text-decoration: none;
+}
+
+
+/* 
+    DISPLAY NOVIDADES ------------------------------------------------------
+    DISPLAY GRUPOS ------------------------------------------------------
+*/
+
+.container__lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__lista__item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: .5em 0;
+}
+
+.container__lista__item>a{
+    grid-row: span 2;
+}
+
+.container__lista__item>a>img{
+    width: 40px;
+
+}
+
+/* 
+    DISPLAY DISCORD ------------------------------------------------------
+*/
+.discordwidget{
+    display: block;
+    width: 95%;
+    height: 60vh;
+    margin: 2% 0 2% 2.5%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    /* 
+        PRINCIPAL ------------------------------------------------------
+    */
+    .principal{
+        display: grid;
+        grid-template-areas: 
+        'ajogos ajogos anews'
+        'ajogos ajogos anews'
+        'adisc agrups anews';
+        grid-gap: 2em 1em;
+        
+        margin: 2em 1em;
+    }
+    
+    /* settando areas do grid */
+    #jogos{grid-area: ajogos;}
+    #news{grid-area: anews;}
+    #disc{grid-area: adisc;}
+    #grups{grid-area: agrups;}
+    
+    .container{
+        
+        border: 1px solid white;
+        border-radius: 10px;
+    
+        height: 100%;
+        margin: 0;
+    
+        min-width: 25vw;
+    }
+    
+    /* 
+        DISPLAY JOGOS ---------------------------------------------------
+    */
+    
+    .container__jogos{
+        height: 60vh;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 10px 8px;
+        margin-bottom: 20px;
+    }
+    
+    .cartaojogo{
+        width: 30%;
+        max-height: 45%;
+        margin-top: 2%;
+    }
+    
+    /* 
+        DISPLAY NOVIDADES ------------------------------------------------------
+        DISPLAY GRUPOS ------------------------------------------------------
+    */
+    
+    .container__lista{
+        padding: 10px 8px;
+    }
+    
+    /* 
+        DISPLAY DISCORD ------------------------------------------------------
+    */
+}    
