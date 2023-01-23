@@ -18,6 +18,7 @@
 .btnganso>img{
     /* width: 50px; */
     height: -webkit-fill-available;
+    height: -moz-available;
     margin: 1em;
 }
 
