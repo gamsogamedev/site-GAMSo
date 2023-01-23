@@ -41,7 +41,7 @@ a:active{
 /*
     FORMULÁRIOS -----------------------------------------------
 */
-input[type=email]{
+input[type=text]{
     padding: 10px 0;
 }
 
