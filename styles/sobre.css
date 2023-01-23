@@ -17,7 +17,8 @@
 @media screen and (min-width: 768px) {
     
     .sobre {
-        flex-direction: row;
+        flex-direction: row-reverse;
+
     }
     
     .sobre__img {
