@@ -5,30 +5,45 @@ const swiper = new Swiper('.swiper', {
 //*
     // Default parameters
     slidesPerView: 1,
+    grid: {
+        rows: 1,
+    },
     spaceBetween: 10,
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
         320: {
         slidesPerView: 2,
-        spaceBetween: 20
+        grid: {
+            rows:1,
         },
-        // when window width is >= 480px
-        480: {
-        slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 20,
+        slidesPerGroup: 2,
         },
         // when window width is >= 640px
         640: {
-        slidesPerView: 4,
-        spaceBetween: 40
+        slidesPerView: 2,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 40,
+        slidesPerGroup: 2,
+        },
+        // tamanho desktop
+        768: {
+        slidesPerView: 3,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 40,
+        slidesPerGroup: 3,
         }
     },
 //*/
 
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    //loop: true,
   
     // If we need pagination
     pagination: {
