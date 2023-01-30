@@ -31,6 +31,7 @@
 .container__jogos{
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 10px;
     margin-top: 1em;
 }
@@ -38,17 +39,19 @@
 .cartaojogo{
     display: flex;
     flex-direction: column;
+    gap: 2px;
     width: 30%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .cartaojogo__thumb{
     display: block;
-    /* provisorio até dar um jeito das thumbs ficarem boas */
-    width: 10vw;
+    width: 100%;
 }
 
 .cartaojogo__link{
+    margin-top: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,12 +87,14 @@
 .container__lista{
     display: flex;
     flex-direction: column;
+    padding: .75em;
 }
 
 .container__lista__item{
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: .5em 0;
+    gap: .5em;
+    margin: 5% 0;
 }
 
 .container__lista__item>a{
@@ -97,8 +102,7 @@
 }
 
 .container__lista__item>a>img{
-    width: 40px;
-
+    width: 50px;
 }
 
 /* 
@@ -151,9 +155,9 @@
     */
     
     .container__jogos{
-        height: 60vh;
+        /* height: 60vh; */
         justify-content: space-evenly;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         padding: 10px 8px;
         margin-bottom: 20px;
     }
@@ -168,10 +172,6 @@
         DISPLAY NOVIDADES ------------------------------------------------------
         DISPLAY GRUPOS ------------------------------------------------------
     */
-    
-    .container__lista{
-        padding: 10px 8px;
-    }
     
     /* 
         DISPLAY DISCORD ------------------------------------------------------
