@@ -1,0 +1,37 @@
+.membros {
+    margin: 2em;
+}
+
+.membros__titulo {
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+.membros__grid {
+    display: grid;
+    gap: 3em;
+}
+
+.cartaomembro {
+    justify-self: center;
+}
+
+.cartaomembro__thumb {
+    width: 100%;
+    max-height: 30vh;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .membros__grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .cartaomembro {
+        width: 10vw;
+    }
+
+}

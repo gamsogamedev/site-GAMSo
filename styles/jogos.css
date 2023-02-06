@@ -1,5 +1,5 @@
 .jogos {
-    margin: 1em;
+    margin: 2em;
 }
 
 .jogos__titulo {
@@ -14,7 +14,7 @@
 }
 
 
-.jogos__grid > .cartaojogo{
+.jogos__grid > .cartaojogo {
     width: 100%;
 }
 
