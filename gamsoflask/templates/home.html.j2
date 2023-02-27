@@ -1,0 +1,111 @@
+{% extends "headerfooter.html.j2" %} 
+{% block conteudo %}
+
+
+    <main class="principal">
+        <!--conteudo pagina principal-->
+
+        <div class="container swiper-fix" id="jogos">
+            <h2 class="container__titulo">jogos</h2>
+            <div class="swiper-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                    {% for jogo in destaques %}
+                        <div class="swiper-slide">
+                            <article class="cartaojogo">
+                                <img src="{{ jogo.cover_url }}" alt="thumbnail jogo" class="cartaojogo__thumb">
+                                <h3 class="cartaojogo__titulo">{{ jogo.title }}</h3>
+                                <p class="cartaojogo__desc">{{ jogo.short_text }}</p>
+                                <p class="cartaojogo__desc">{{ jogo.published_at }}</p>
+                                <a href="{{ jogo.url }}" class="cartaojogo__link">jogar</a>
+                            </article>
+                        </div>
+                    {% endfor %}
+
+                    </div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+        </div> 
+        <!--flex carrocel com varios jogos do itch-->
+
+        <div class="container" id="news">
+            <h2 class="container__titulo">novidades</h2>
+            <ul class="container__lista">
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>                
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>               
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>       
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>                
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/ganso2.png" alt="thumbnail da noticia"></img></a>
+                    <h4>titulo do post</h4>
+                    <p>informacoes sobre o post </p>
+                </li>
+            </ul>
+        </div> <!--secao scrollavel com feed das redes-->
+
+        <div class="container" id="disc">
+            <h2 class="container__titulo">nosso discord</h2>
+            <iframe src="https://discord.com/widget?id=496348550934822912&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="discordwidget"></iframe>
+        </div> <!--widget q mostra o discord-->
+
+        <div class="container" id="grups">
+            <h2 class="container__titulo">outros grupos</h2>
+            <ul class="container__lista">
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/outros_grupos/fog.webp" alt="logo fog"></img></a>
+                    <h4>FoG - Fellowship of the Game</h4>
+                    <p>Grupo gamedev da USP de São Carlos</p>
+                </li>
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/outros_grupos/maritacas.webp" alt="logo maritacas"></img></a>
+                    <h4>Maritacas Gamedev</h4>
+                    <p>Grupo gamedev da UFSCar de Sorocaba</p>
+                </li>
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/outros_grupos/gamux.webp" alt="logo gamux"></img></a>
+                    <h4>Gamux</h4>
+                    <p>Grupo gamedev da UNICAMP</p>
+                </li>
+                <li class="container__lista__item">
+                    <a href="#"><img src="/static/img/outros_grupos/uspgamedev.webp" alt="logo usp"></img></a>
+                    <h4>USP Gamedev</h4>
+                    <p>Grupo gamedev da USP de São Paulo</p>
+                </li>
+            </ul>
+        </div> <!--secao shoutouts pro fog e maritacas-->
+    </main>
+
+
+
+{% endblock %}

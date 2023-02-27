@@ -1,0 +1,24 @@
+{% extends "headerfooter.html.j2" %} 
+{% block conteudo %}
+
+
+    <main class="jogos">
+        <h2 class="jogos__titulo">Nossos Jogos</h2>
+        <!--display bem legal com os nossos jogos do itch io pela api, pegando descrições legais, mostrando destaques, a porra toda-->
+        <!-- <p>nossos jogos sao muito legaissssssssssss olha elessssss</p> -->
+        <div class="jogos__grid">
+
+        {% for jogo in jogos %}
+            <article class="cartaojogo">
+                <img src="{{ jogo.cover_url }}" alt="thumbnail jogo" class="cartaojogo__thumb">
+                <h3 class="cartaojogo__titulo">{{ jogo.title }}</h3>
+                <p class="cartaojogo__desc">{{ jogo.short_text }}</p>
+                <p class="cartaojogo__desc">{{ jogo.published_at }}</p>
+                <a href="{{ jogo.url }}" class="cartaojogo__link">jogar</a>
+            </article>
+        {% endfor %}
+        </div>
+        
+    </main>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "headerfooter.html.j2" %} 
+{% block conteudo %}
+
+
+    <main class="membros">
+        <!--display bem legal com todos os nossos membros, pegando dados de uma planilha google sheets, com uma descrição de cada um, papel, links sociais, jogos q trabalharam... banstante coisa vai ficar massa-->
+        <!-- <p>nossa olha todos esses membroooooooos........</p> -->
+        
+        <h2 class="membros__titulo">Membros do GAMSo</h2>
+        <div class="membros__grid">
+        {% for index, row in membros %}
+
+            <article class="cartaomembro">
+                <img class="cartaomembro__thumb" src="/static/img/placeholder_membro.png" alt="foto do membro">
+                <h2 class="cartaomembro__nome">{{ row['Nome'] }}</h2>
+                <p class="cartaomembro__papel">{{ row['Ocupação'] }}</p>
+                <p class="cartaomembro__papel">{{ row['Tag discord'] }}</p>
+                <a class="cartaomembro__link" href="#">ver mais</a>
+            </article>
+
+        {% endfor %}
+        </div>
+    </main>
+    
+
+{% endblock %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="/static/img/Logo_Gamso_c_simbolos.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/static/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>GAMSo</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu" onclick="toggleMenu()">
+            <div class="linha1"></div><div class="linha2"></div><div class="linha3"></div>
+        </button>
+        <h2 class="cabecalho__tmobile">GAMSo</h2>
+        <img src="/static/img/Logo_Gamso_c_simbolos.png" alt="logo do gamso" class="cabecalho__logo">
+        <h1 class="cabecalho__titulo">GAMSo - Game Art Music Software</h1>
+        <p class="cabecalho__texto">O grupo de desenvolvimento de jogos da UFSCar</p>
+    </header>
+    <nav class="barranav">
+        <ul class="barranav__lista">
+            <li><a class="barranav__link" href="{{url_for('pg_principal')}}">home</a></li>
+            <li><a class="barranav__link" href="{{url_for('pg_jogos')}}">jogos</a></li>
+            <li><a class="barranav__link" href="{{url_for('pg_membros')}}">membros</a></li>
+            <li><a class="barranav__link" href="{{url_for('pg_eventos')}}">eventos</a></li>
+            <li><a class="barranav__link" href="{{url_for('pg_sobre')}}">sobre nós</a></li>
+            <li><a class="barranav__link" href="{{url_for('pg_contato')}}">contato</a></li>
+        </ul>
+    </nav>
+
+    {% block conteudo %}{% endblock %}
+
+
+    <footer class="rodape">
+        <button type="button" class="btnganso" onclick="tocaHONK()">
+            <img src="/static/img/ganso1.webp" alt="ganso">
+            <!--ganso q faz som kkkkk-->
+        </button>
+        <div class="redes">
+            <!--icones de redes sociais-->
+            <a href="#"><img src="/static/img/redes_sociais/discord.png" alt="discord"></a>
+            <a href="#"><img src="/static/img/redes_sociais/itch-io(1).svg" alt="itch"></a>
+            <a href="#"><img src="/static/img/redes_sociais/Facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/static/img/redes_sociais/Instagram.png" alt="instagram"></a>
+        </div>
+    </footer>
+
+    <audio src="/static/img/honk-sound.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+</html>

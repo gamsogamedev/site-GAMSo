@@ -1,0 +1,59 @@
+/* 
+    MENU NAVEGAÇÃO ------------------------------------------------------
+*/
+
+.barranav{
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 76px;
+    left: 0;
+    width: 30vw;
+    min-width: fit-content;
+
+}
+
+
+.barranav.menuaberto{
+    display: block;
+}
+
+.barranav__lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.barranav__lista > li{
+    padding: 1em;
+
+    /**/
+}
+
+.barranav__link {
+    margin-top: 1em;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    /* 
+        MENU NAVEGAÇÃO ------------------------------------------------------
+    */
+    .barranav{
+        display: block;
+        position: static;
+        width: 100%;
+        margin-bottom: 16px;
+    
+    }
+    
+    .barranav__lista{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+
+}    

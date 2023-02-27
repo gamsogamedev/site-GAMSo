@@ -1,0 +1,41 @@
+/* importando modulos */
+@import url("cabecalho.css");
+@import url("navegacao.css");
+@import url("rodape.css");
+@import url("home.css");
+@import url("jogos.css");
+@import url("membros.css");
+@import url("sobre.css");
+@import url("contato.css");
+
+/* settando variaveis */
+:root{
+    --gamso-red: #7e0012;
+    --gamso-gray: #333333;
+}
+
+body{
+    background-color: var(--gamso-gray);
+    color: white;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+    
+    min-height:85vh;
+
+
+    /* gambiarra pra deixar o footer no pé */
+    position: relative;
+    padding-bottom: 15vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active{
+    text-decoration: underline;
+}
