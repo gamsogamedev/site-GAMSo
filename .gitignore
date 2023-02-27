@@ -1,2 +1,9 @@
 .vscode
 .vs/
+
+__pycache__/
+
+instance/
+.webassets-cache
+
+.env
