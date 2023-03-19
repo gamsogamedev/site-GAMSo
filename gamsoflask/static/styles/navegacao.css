@@ -60,6 +60,17 @@
         flex-direction: row;
         justify-content: flex-end;
     }
+
+    
+    .barranav__lista > a{
+        padding: 1em;
+        margin: .5em 1em .5em 0;
+    }
+
+    .barranav__lista > a:not(:first-child){
+        border-top: none;
+    }
+
     
 
 }    

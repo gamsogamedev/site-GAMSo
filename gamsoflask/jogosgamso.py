@@ -13,8 +13,6 @@ game_collection = GameCollection(session).all()
 itchuser = UserCollection(session).me()
 
 # tratamento rapido das strings...
-game_collection = game_collection[-1:1]
-
 for jogo in game_collection:
     
     jogo.published_at = jogo.published_at[:10]
@@ -25,7 +23,6 @@ for jogo in game_collection:
     
     #print(jogo.published_at)
     #print(jogo.short_text)
-
 
 
 #todo: filtrar a lista pra mandar apenas jogos de fato publicados e ordenados com os mais recentes primeiro
