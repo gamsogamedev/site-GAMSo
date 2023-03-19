@@ -16,6 +16,7 @@
 
 .barranav.menuaberto{
     display: block;
+    z-index: 100;
 }
 
 .barranav__lista{
@@ -23,17 +24,22 @@
     flex-direction: column;
 }
 
-.barranav__lista > li{
-    padding: 1em;
+.barranav__lista > a{
+    padding: 2em 0;
+    margin: 0 1em;
 
     /**/
 }
 
+.barranav__lista > a:not(:first-child){
+    border-top: white solid 1px;
+}
+
 .barranav__link {
-    margin-top: 1em;
     font-size: 24px;
     color: white;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 
