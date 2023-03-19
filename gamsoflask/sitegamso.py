@@ -33,4 +33,4 @@ def pg_sobre():
 
 @app.route('/contato')
 def pg_contato():
-    return render_template('contatos.html.j2')
+    return render_template('contato.html.j2')
