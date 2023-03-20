@@ -110,6 +110,10 @@
     width: 100%;
 }
 
+.cartaojogo__desc{
+    display: none;
+}
+
 .cartaojogo__link{
     margin-top: auto;
 
@@ -228,6 +232,12 @@
         /* max-height: 45%; */
         margin-top: 2%;
     }
+
+    
+    .cartaojogo__desc{
+        display: block;
+    }
+
     
     /* 
         DISPLAY NOVIDADES ------------------------------------------------------
